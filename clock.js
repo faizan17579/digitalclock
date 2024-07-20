@@ -27,7 +27,15 @@ setInterval(()=>{
 }, 1000);
 
 let contain = document.getElementById('con');
-contain.addEventListener('click', () => {
+let btn = document.getElementById('bt1');
+let btn2= document.getElementById('bt2');
+
+btn.addEventListener('click', () => {
+   
+    contain.classList.toggle('timedark');
+    document.querySelector('main').classList.toggle('dark');
+});
+btn2.addEventListener('click', () => {
     contain.classList.toggle('timedark');
     document.querySelector('main').classList.toggle('dark');
 });
